@@ -3,16 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using DesingPatterns.Factory;
 
 namespace DesingPatterns
 {
-  class Program
+  class Config
   {
-    static void Main(string[] args)
+    public readonly static Config instance = new Config();
+
+    public int kiekEiluciu => 19;
+    public int a;
+
+    private Config()
     {
-      PizzaStore simple = new PizzaFactory();
-      simple.orderPizz("cheese");
+
     }
   }
 }

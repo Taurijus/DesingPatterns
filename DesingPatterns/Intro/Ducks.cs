@@ -2,8 +2,8 @@
 
 namespace DesingPatterns {
   public abstract class Duck {
-    protected QuackBehavior quackBehavior;
-    protected FlyBehavior flyBehavior;
+    protected IQuackBehavior quackBehavior;
+    protected IFlyBehavior flyBehavior;
 
     public void PreformQuack() { quackBehavior.quack(); }
 
@@ -15,8 +15,8 @@ namespace DesingPatterns {
 
     #region stage two
 
-    public void setFlyBehavior(FlyBehavior fb) => flyBehavior = fb;
-    public void setQuackBehavior(QuackBehavior qb) => quackBehavior = qb;
+    public void setFlyBehavior(IFlyBehavior fb) => flyBehavior = fb;
+    public void setQuackBehavior(IQuackBehavior qb) => quackBehavior = qb;
 
     #endregion
   }

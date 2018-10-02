@@ -1,9 +1,9 @@
 ﻿namespace DesingPatterns {
-  public interface FlyBehavior {
+  public interface IFlyBehavior {
     void fly();
   }
 
-  public interface QuackBehavior {
+  public interface IQuackBehavior {
     void quack();
   }
 }

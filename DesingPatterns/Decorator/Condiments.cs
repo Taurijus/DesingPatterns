@@ -30,4 +30,12 @@
     public override string Description => beverage.Description + ", Whip";
     public override double getCost() => beverage.getCost() + 0.10;
   }
+
+  class Cukrus : CondimentDecorator
+  {
+    public Cukrus(Beverage beverage) { this.beverage = beverage; }
+
+    public override string Description => beverage.Description + ", Cukrus";
+    public override double getCost() => beverage.getCost() + 0.05;
+  }
 }

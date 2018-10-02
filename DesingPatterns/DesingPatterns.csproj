@@ -42,16 +42,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Factory\Pizza.cs" />
+    <Compile Include="Factory\PizzaFactory.cs" />
+    <Compile Include="Factory\PizzaStore.cs" />
+    <Compile Include="Singleton\Config.cs" />
     <Compile Include="Decorator\Beverage.cs" />
     <Compile Include="Decorator\Condiments.cs" />
     <Compile Include="Intro\Behaviors.cs" />
     <Compile Include="Intro\Ducks.cs" />
     <Compile Include="Intro\Interfaces.cs" />
+    <Compile Include="Observer\WaetherData.cs" />
+    <Compile Include="Observer\WeatherStation.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

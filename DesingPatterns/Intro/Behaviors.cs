@@ -1,30 +1,35 @@
 ﻿using System;
 
 namespace DesingPatterns {
-  public class FlyNoWay : FlyBehavior {
+  public class FlyNoWay : IFlyBehavior {
     public void fly() => Console.WriteLine("I can't fly");
   }
 
-  public class FlyWithWings : FlyBehavior {
+  public class FlyWithWings : IFlyBehavior {
     public void fly() => Console.WriteLine("I'm flying!!");
   }
 
-  public class Quack : QuackBehavior {
+  public class Quack : IQuackBehavior {
     public void quack() => Console.WriteLine("Quack");
     
   }
 
-  class MuteQuack : QuackBehavior {
+  class MuteQuack : IQuackBehavior {
     public void quack() => Console.WriteLine("<< Silence >>");
   }
 
-  class Squeak : QuackBehavior {
+  class Squeak : IQuackBehavior {
     public void quack() => Console.WriteLine("Squeak");
+  }
+
+  class Krenkti : IQuackBehavior
+  {
+    public void quack()  => Console.WriteLine("Krenkia");
   }
 
   #region stage two
 
-  class FlyRocketPowered : FlyBehavior {
+  class FlyRocketPowered : IFlyBehavior {
     public void fly() => Console.WriteLine("I'm flying with rocket!");
   }
 
